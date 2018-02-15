@@ -9,10 +9,12 @@
         studentOne.Name = tbStudentNameOne.Text ' Set the Name of Student One
         studentTwo.Name = tbStudentNameTwo.Text ' Set the Name of Student Two
 
-        lbStudentOnePropertyOutput.Text = studentOne.Name ' Get/Access the Name property of Student One 
+        lbStudentOneNameOutput.Text = studentOne.Name ' Get/Access the Name property of Student One 
+        lbStudentOneCountOutput.Text = studentOne.Count ' Get/Access the Count property of Student One 
         lbStudentOneMethodOutput.Text = studentOne.GetStudentData() ' Call the function GetStudentData for Student One
 
-        lbStudentTwoPropertyOutput.Text = studentTwo.Name ' Get/Access the Name property of Student Two
+        lbStudentTwoNameOutput.Text = studentTwo.Name ' Get/Access the Name property of Student Two
+        lbStudentTwoCountOutput.Text = studentTwo.Count ' Get/Access the Count property of Student Two 
         lbStudentTwoMethodOutput.Text = studentTwo.GetStudentData() ' Call the function GetStudentData for Student Two
 
     End Sub
@@ -24,10 +26,12 @@
         tbStudentNameOne.Text = String.Empty ' clear text box
         tbStudentNameTwo.Text = String.Empty ' clear text box
 
-        lbStudentOnePropertyOutput.Text = String.Empty ' clear label
+        lbStudentOneNameOutput.Text = String.Empty ' clear label
+        lbStudentOneCountOutput.Text = String.Empty ' clear label
         lbStudentOneMethodOutput.Text = String.Empty ' clear label
 
-        lbStudentTwoPropertyOutput.Text = String.Empty ' clear label
+        lbStudentTwoNameOutput.Text = String.Empty ' clear label
+        lbStudentTwoCountOutput.Text = String.Empty ' clear label
         lbStudentTwoMethodOutput.Text = String.Empty ' clear label
 
     End Sub

@@ -29,16 +29,20 @@ Partial Class frmStudentDemo
         Me.lbStudentTwoNameInput = New System.Windows.Forms.Label()
         Me.grpStudentOne = New System.Windows.Forms.GroupBox()
         Me.lbStudentOneMethodOutput = New System.Windows.Forms.Label()
-        Me.lbStudentOnePropertyOutput = New System.Windows.Forms.Label()
+        Me.lbStudentOneNameOutput = New System.Windows.Forms.Label()
         Me.lbStudentOneMethod = New System.Windows.Forms.Label()
-        Me.lbStudentOneProperty = New System.Windows.Forms.Label()
+        Me.lbStudentOneName = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lbStudentTwoMethodOutput = New System.Windows.Forms.Label()
-        Me.lbStudentTwoPropertyOutput = New System.Windows.Forms.Label()
+        Me.lbStudentTwoNameOutput = New System.Windows.Forms.Label()
         Me.lbStudentTwoMethod = New System.Windows.Forms.Label()
-        Me.lbStudentTwoProperty = New System.Windows.Forms.Label()
+        Me.lbStudentTwoName = New System.Windows.Forms.Label()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.lbStudentOneCountOutput = New System.Windows.Forms.Label()
+        Me.lbStudentOneCount = New System.Windows.Forms.Label()
+        Me.lbStudentTwoCountOutput = New System.Windows.Forms.Label()
+        Me.lbStudentTwoCount = New System.Windows.Forms.Label()
         Me.grpStudentOne.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -84,13 +88,15 @@ Partial Class frmStudentDemo
         '
         'grpStudentOne
         '
+        Me.grpStudentOne.Controls.Add(Me.lbStudentOneCountOutput)
+        Me.grpStudentOne.Controls.Add(Me.lbStudentOneCount)
         Me.grpStudentOne.Controls.Add(Me.lbStudentOneMethodOutput)
-        Me.grpStudentOne.Controls.Add(Me.lbStudentOnePropertyOutput)
+        Me.grpStudentOne.Controls.Add(Me.lbStudentOneNameOutput)
         Me.grpStudentOne.Controls.Add(Me.lbStudentOneMethod)
-        Me.grpStudentOne.Controls.Add(Me.lbStudentOneProperty)
+        Me.grpStudentOne.Controls.Add(Me.lbStudentOneName)
         Me.grpStudentOne.Location = New System.Drawing.Point(8, 93)
         Me.grpStudentOne.Name = "grpStudentOne"
-        Me.grpStudentOne.Size = New System.Drawing.Size(356, 83)
+        Me.grpStudentOne.Size = New System.Drawing.Size(356, 103)
         Me.grpStudentOne.TabIndex = 5
         Me.grpStudentOne.TabStop = False
         Me.grpStudentOne.Text = "Student One (Output)"
@@ -98,44 +104,46 @@ Partial Class frmStudentDemo
         'lbStudentOneMethodOutput
         '
         Me.lbStudentOneMethodOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lbStudentOneMethodOutput.Location = New System.Drawing.Point(139, 52)
+        Me.lbStudentOneMethodOutput.Location = New System.Drawing.Point(139, 75)
         Me.lbStudentOneMethodOutput.Name = "lbStudentOneMethodOutput"
         Me.lbStudentOneMethodOutput.Size = New System.Drawing.Size(211, 22)
         Me.lbStudentOneMethodOutput.TabIndex = 3
         '
-        'lbStudentOnePropertyOutput
+        'lbStudentOneNameOutput
         '
-        Me.lbStudentOnePropertyOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lbStudentOnePropertyOutput.Location = New System.Drawing.Point(139, 26)
-        Me.lbStudentOnePropertyOutput.Name = "lbStudentOnePropertyOutput"
-        Me.lbStudentOnePropertyOutput.Size = New System.Drawing.Size(211, 22)
-        Me.lbStudentOnePropertyOutput.TabIndex = 1
+        Me.lbStudentOneNameOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbStudentOneNameOutput.Location = New System.Drawing.Point(139, 26)
+        Me.lbStudentOneNameOutput.Name = "lbStudentOneNameOutput"
+        Me.lbStudentOneNameOutput.Size = New System.Drawing.Size(211, 22)
+        Me.lbStudentOneNameOutput.TabIndex = 1
         '
         'lbStudentOneMethod
         '
-        Me.lbStudentOneMethod.Location = New System.Drawing.Point(7, 52)
+        Me.lbStudentOneMethod.Location = New System.Drawing.Point(7, 75)
         Me.lbStudentOneMethod.Name = "lbStudentOneMethod"
         Me.lbStudentOneMethod.Size = New System.Drawing.Size(136, 22)
         Me.lbStudentOneMethod.TabIndex = 2
         Me.lbStudentOneMethod.Text = "GetStudentData (Method):"
         '
-        'lbStudentOneProperty
+        'lbStudentOneName
         '
-        Me.lbStudentOneProperty.Location = New System.Drawing.Point(7, 27)
-        Me.lbStudentOneProperty.Name = "lbStudentOneProperty"
-        Me.lbStudentOneProperty.Size = New System.Drawing.Size(124, 21)
-        Me.lbStudentOneProperty.TabIndex = 0
-        Me.lbStudentOneProperty.Text = "Name (Property):"
+        Me.lbStudentOneName.Location = New System.Drawing.Point(7, 27)
+        Me.lbStudentOneName.Name = "lbStudentOneName"
+        Me.lbStudentOneName.Size = New System.Drawing.Size(124, 21)
+        Me.lbStudentOneName.TabIndex = 0
+        Me.lbStudentOneName.Text = "Name (Property):"
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.lbStudentTwoCountOutput)
+        Me.GroupBox1.Controls.Add(Me.lbStudentTwoCount)
         Me.GroupBox1.Controls.Add(Me.lbStudentTwoMethodOutput)
-        Me.GroupBox1.Controls.Add(Me.lbStudentTwoPropertyOutput)
+        Me.GroupBox1.Controls.Add(Me.lbStudentTwoNameOutput)
         Me.GroupBox1.Controls.Add(Me.lbStudentTwoMethod)
-        Me.GroupBox1.Controls.Add(Me.lbStudentTwoProperty)
-        Me.GroupBox1.Location = New System.Drawing.Point(8, 182)
+        Me.GroupBox1.Controls.Add(Me.lbStudentTwoName)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, 204)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(356, 81)
+        Me.GroupBox1.Size = New System.Drawing.Size(356, 106)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Student Two (Output)"
@@ -143,34 +151,34 @@ Partial Class frmStudentDemo
         'lbStudentTwoMethodOutput
         '
         Me.lbStudentTwoMethodOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lbStudentTwoMethodOutput.Location = New System.Drawing.Point(138, 49)
+        Me.lbStudentTwoMethodOutput.Location = New System.Drawing.Point(137, 76)
         Me.lbStudentTwoMethodOutput.Name = "lbStudentTwoMethodOutput"
         Me.lbStudentTwoMethodOutput.Size = New System.Drawing.Size(212, 22)
         Me.lbStudentTwoMethodOutput.TabIndex = 3
         '
-        'lbStudentTwoPropertyOutput
+        'lbStudentTwoNameOutput
         '
-        Me.lbStudentTwoPropertyOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lbStudentTwoPropertyOutput.Location = New System.Drawing.Point(138, 26)
-        Me.lbStudentTwoPropertyOutput.Name = "lbStudentTwoPropertyOutput"
-        Me.lbStudentTwoPropertyOutput.Size = New System.Drawing.Size(212, 22)
-        Me.lbStudentTwoPropertyOutput.TabIndex = 1
+        Me.lbStudentTwoNameOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbStudentTwoNameOutput.Location = New System.Drawing.Point(138, 26)
+        Me.lbStudentTwoNameOutput.Name = "lbStudentTwoNameOutput"
+        Me.lbStudentTwoNameOutput.Size = New System.Drawing.Size(212, 22)
+        Me.lbStudentTwoNameOutput.TabIndex = 1
         '
         'lbStudentTwoMethod
         '
-        Me.lbStudentTwoMethod.Location = New System.Drawing.Point(7, 52)
+        Me.lbStudentTwoMethod.Location = New System.Drawing.Point(6, 79)
         Me.lbStudentTwoMethod.Name = "lbStudentTwoMethod"
         Me.lbStudentTwoMethod.Size = New System.Drawing.Size(136, 22)
         Me.lbStudentTwoMethod.TabIndex = 2
         Me.lbStudentTwoMethod.Text = "GetStudentData (Method):"
         '
-        'lbStudentTwoProperty
+        'lbStudentTwoName
         '
-        Me.lbStudentTwoProperty.Location = New System.Drawing.Point(7, 27)
-        Me.lbStudentTwoProperty.Name = "lbStudentTwoProperty"
-        Me.lbStudentTwoProperty.Size = New System.Drawing.Size(129, 21)
-        Me.lbStudentTwoProperty.TabIndex = 0
-        Me.lbStudentTwoProperty.Text = "Name (Property):"
+        Me.lbStudentTwoName.Location = New System.Drawing.Point(7, 27)
+        Me.lbStudentTwoName.Name = "lbStudentTwoName"
+        Me.lbStudentTwoName.Size = New System.Drawing.Size(129, 21)
+        Me.lbStudentTwoName.TabIndex = 0
+        Me.lbStudentTwoName.Text = "Name (Property):"
         '
         'btnReset
         '
@@ -190,12 +198,44 @@ Partial Class frmStudentDemo
         Me.btnExit.Text = "E&xit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'lbStudentOneCountOutput
+        '
+        Me.lbStudentOneCountOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbStudentOneCountOutput.Location = New System.Drawing.Point(139, 50)
+        Me.lbStudentOneCountOutput.Name = "lbStudentOneCountOutput"
+        Me.lbStudentOneCountOutput.Size = New System.Drawing.Size(211, 22)
+        Me.lbStudentOneCountOutput.TabIndex = 5
+        '
+        'lbStudentOneCount
+        '
+        Me.lbStudentOneCount.Location = New System.Drawing.Point(7, 51)
+        Me.lbStudentOneCount.Name = "lbStudentOneCount"
+        Me.lbStudentOneCount.Size = New System.Drawing.Size(124, 21)
+        Me.lbStudentOneCount.TabIndex = 4
+        Me.lbStudentOneCount.Text = "Count (Property):"
+        '
+        'lbStudentTwoCountOutput
+        '
+        Me.lbStudentTwoCountOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbStudentTwoCountOutput.Location = New System.Drawing.Point(138, 51)
+        Me.lbStudentTwoCountOutput.Name = "lbStudentTwoCountOutput"
+        Me.lbStudentTwoCountOutput.Size = New System.Drawing.Size(211, 22)
+        Me.lbStudentTwoCountOutput.TabIndex = 7
+        '
+        'lbStudentTwoCount
+        '
+        Me.lbStudentTwoCount.Location = New System.Drawing.Point(6, 52)
+        Me.lbStudentTwoCount.Name = "lbStudentTwoCount"
+        Me.lbStudentTwoCount.Size = New System.Drawing.Size(124, 21)
+        Me.lbStudentTwoCount.TabIndex = 6
+        Me.lbStudentTwoCount.Text = "Count (Property):"
+        '
         'frmStudentDemo
         '
         Me.AcceptButton = Me.btnEnter
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(376, 268)
+        Me.ClientSize = New System.Drawing.Size(376, 316)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.GroupBox1)
@@ -224,14 +264,18 @@ Partial Class frmStudentDemo
     Friend WithEvents lbStudentTwoNameInput As Label
     Friend WithEvents grpStudentOne As GroupBox
     Friend WithEvents lbStudentOneMethodOutput As Label
-    Friend WithEvents lbStudentOnePropertyOutput As Label
+    Friend WithEvents lbStudentOneNameOutput As Label
     Friend WithEvents lbStudentOneMethod As Label
-    Friend WithEvents lbStudentOneProperty As Label
+    Friend WithEvents lbStudentOneName As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents lbStudentTwoMethodOutput As Label
-    Friend WithEvents lbStudentTwoPropertyOutput As Label
+    Friend WithEvents lbStudentTwoNameOutput As Label
     Friend WithEvents lbStudentTwoMethod As Label
-    Friend WithEvents lbStudentTwoProperty As Label
+    Friend WithEvents lbStudentTwoName As Label
     Friend WithEvents btnReset As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents lbStudentOneCountOutput As Label
+    Friend WithEvents lbStudentOneCount As Label
+    Friend WithEvents lbStudentTwoCountOutput As Label
+    Friend WithEvents lbStudentTwoCount As Label
 End Class
